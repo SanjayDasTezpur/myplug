@@ -3,8 +3,7 @@ iYT Plugin:-
 Youtrack configuration: - http://<youtrack host>:<port>
  
 2.	Your Intellij IDEA version  should be 2018 
-GOTO File -> Settings -> Plugins -> Install from Disk And give the path 
-/nfs/iind/disks/nbval5/intellij_plugin/iYT-2.0-all.jar 
+GOTO File -> Settings -> Plugins -> Install from Disk And give the path where jar is available
 3.	Restart Intellij
 4.	Click iYT -> Configure Youtrack 
  
