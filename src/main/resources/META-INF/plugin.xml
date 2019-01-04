@@ -1,0 +1,40 @@
+<idea-plugin>
+    <id>iytplugin</id>
+    <name>iYT</name>
+    <version>1.0</version>
+    <vendor email="sanjay.das@intel.com" url="http://www.intel.com">SWCE</vendor>
+
+    <description><![CDATA[
+      Plugin is developed to do comment in Youtrack Issue with Git Commit link.<br>
+      <em>IDE integration</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      The Youtrack Endpoint for this plugin is http://swce-youtrack.intel.com:8081 .<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="MyPlugin.SampleMenu" text="_iYT" description="Plugin for comment git link in youtrack">
+            <add-to-group group-id="MainMenu" anchor="last"  />
+            <action id="Myplugin.Textboxes" class="com.swce.iind.plugin.myPlug" text="iYTAddComment" description="Click to add git commit link to Youtrack comment" />
+            <action id="Myplugin.Config" class="com.swce.iind.plugin.PluginConfig" text="Configure Youtrack" description="Click to add  Youtrack credentials" />
+            <!--  <action id="Myplugin.Dialogs" class="com.swce.iind.plugin.myPlug" text="_Youtrack" description="Youtrack Plugin Dialogs" /> -->
+        </group>
+    </actions>
+
+</idea-plugin>
